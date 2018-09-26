@@ -10,8 +10,7 @@ body{
 
 #navi-header{
   background-color: rgb(40,44,52);
-}
-
+  height: 60px;}
 
 .wrapper{
   width: 90%;
@@ -20,3 +19,54 @@ body{
 ul{list-style-type: none;
 margin: 0;
 padding: 0;}
+
+#navi-header a{
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration:none;
+  font-weight: bold;
+  transition: 0.8s ease-out;
+
+}
+
+#navi-header a:hover{
+  color:rgb(69,139,116);
+}
+
+#menu{
+  display: none;}
+
+#logo{margin-top: 10px;
+}
+
+
+#burger{
+  background: transparent;
+  color: #fff;
+  float: right;
+}
+
+#menu.show{
+  display: block;
+  background-color: rgb(40,44,52);
+  width: 100%;
+  position: absolute;
+  top: 60px;
+  left:0;
+  text-align: center;
+}
+
+@media (min-width:1024px) {
+  #navi-header li
+    {display: inline-block;
+    margin-left: 2rem;
+
+  }
+  #menu{
+    float: right;
+    display: block;
+    margin-top: 19px;
+
+  }
+  #burger{display: none;}
+}

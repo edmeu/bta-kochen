@@ -9,13 +9,17 @@
       <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header id= "navi-header">
+    <header id="navi-header">
       <div class="wrapper">
         <a href="index.html">
-          <img src="img/logo.png" alt="Logo Kochen 2.0" width="40">
+          <img id="logo" src="img/logo.svg" alt="Logo Kochen 2.0" height="40">
           </a>
+
+          <button id="burger" type="button" name="button">Burger</button>
           <!--NAV IST DAS ELEMENT FÜR NAVIGATION-->
-          <nav>
+
+
+          <nav id="menu">
             <ul>
               <li>
                 <a href="index.html" id ="navi">HOME</a>
@@ -33,5 +37,8 @@
           </nav>
       </div>
     </header>
+
+    <!--hier kommt das Java Script für das menu-->
+    <script type="text/javascript" src="menu.js"></script>
   </body>
 </html>
